@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          client-id:
+          client-secret:
+          introspection-uri:
