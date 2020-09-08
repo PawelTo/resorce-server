@@ -2,7 +2,10 @@ spring:
   security:
     oauth2:
       resourceserver:
-        opaquetoken:
-          client-id: XXX.apps.googleusercontent.com
-          client-secret: XXX
-          introspection-uri: "https://accounts.google.com/o/oauth2/v2/auth"
+        #opaquetoken:
+        #  client-id: XXX.apps.googleusercontent.com
+        #  client-secret: XXX
+        #  introspection-uri: "https://accounts.google.com/o/oauth2/v2/auth"
+        jwt:
+          #issuer-uri: https://accounts.google.com
+          jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs

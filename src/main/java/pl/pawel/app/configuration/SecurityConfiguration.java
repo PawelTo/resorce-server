@@ -28,7 +28,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/**").authenticated()
                 //.anyRequest().denyAll()
                 .and()
-                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::opaqueToken)
+                /*Configuration for opaqueToken
+                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::opaqueToken)*/
+                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
         ;
     }
 }
