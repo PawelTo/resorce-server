@@ -18,6 +18,6 @@ public class V1UserController {
 
     @GetMapping(produces = APPLICATION_JSON_VALUE)
     public String getAllUsers(){
-        return "All Users";
+        return "All Users from protected resource server";
     }
 }
